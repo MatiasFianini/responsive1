@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fw-1: 400;
+    --fw-2: 700;  
+}
+
+body{
+    background-color: antiquewhite;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+section{
+    padding: 20px;
+}
+
+
+h1, h3{
+    margin-bottom: 10px;
+}
+
+h1{
+    font-family: 'Kaisei HarunoUmi', serif; 
+    font-size: 3rem;
+    font-weight: var(--fw-2);
+}
+
+h3{
+    font-family: 'Kaisei HarunoUmi', serif; 
+    font-size: 2rem;
+    font-weight: var(--fw-1);
+}
+
+p{  
+    font-family: 'Kaisei HarunoUmi', serif; 
+    font-size: 1.25rem;
+    font-weight: var(--fw-1);
+    margin-bottom: 10px;
+}
+
+img{
+    width: 50%;
+    height:500px;
+    border-radius: 3%;
+}
+
+.parrafo1{
+    column-count: 3;
+    column-gap: 10px;
+    text-align: left;
+}
+
+.parrafo2{
+    text-align: justify; 
+    margin-right: 20px;
+    width: 50%;
+}
+
+.contenedor2{
+    display: flex;
+    align-items: center;
+    
+}
+
+.parrafo3{
+text-align: justify;
+margin: 20px 0;
+}
+
+.imagen-min{
+   width: 300px;
+   margin: 30px;
+   height: 300px;
+   scroll-snap-align: end; 
+}
+
+.contenedor3{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagenes{
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    display: flex;
+    flex-wrap: nowrap !important;
+    scroll-snap-type: inline mandatory;
+
+}
+
+
+@media (max-width: 800px){
+
+    .parrafo1{
+        column-count: 1;
+        text-align: left;
+    }
+    
+
+    .contenedor2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .parrafo2{
+        text-align: justify; 
+        margin-right: 0;
+        width: 100%;
+    }
+
+    img{
+        width: 80%;
+        height:auto;
+        margin-top: 10px;
+    }
+
+    .imagenes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+}
